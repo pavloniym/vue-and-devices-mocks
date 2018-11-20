@@ -82,7 +82,7 @@ Custom content height
 * Type: [`String`, `Array`]
 * Default: `null`
 
-Device skins: `dark`, `inverted`, 'noShadow', `touch`
+Device skins: `dark`, `inverted`, `noShadow`, `touch`
 
 ---
 
