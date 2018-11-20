@@ -33,7 +33,7 @@
         },
         skins: {
             type: [String, Array],
-            default: false
+            default: null
         }
     };
 
