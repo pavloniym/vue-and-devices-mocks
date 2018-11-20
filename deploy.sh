@@ -7,4 +7,4 @@ git init
 git add -A
 git commit -m "Update demo page"
 git remote add origin https://github.com/PavelShar/vue-and-devices-mocks.git
-git push origin master:gh-pages
+git push -f origin master:gh-pages
