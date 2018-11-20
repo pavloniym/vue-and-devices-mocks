@@ -7,6 +7,8 @@ Includes:
 * ipad-mini
 * mac-browser
 
+[Example](https://pavelshar.github.io/vue-and-devices-mocks/)
+
 ### Installation
 ```bash
 npm install vue-and-devices-mocks # OR yarn add vue-and-devices-mocks
@@ -86,7 +88,7 @@ Device skins: `dark`, `inverted`, 'noShadow', `touch`
 
 
 ### Slots
-### default
+#### default
 Default slot where you should render your device's content
 
 ---
