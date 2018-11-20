@@ -1,0 +1,18 @@
+@mixin ipad($i) {
+  .device--scale-#{$i} {
+    &.device--ipad {
+
+      .device__header:after,
+      .device__header:after {
+        transform: translate(0, 15px * $scale * $i);
+      }
+
+      .device__content {
+        width: 768px * $scale * $i;
+        height: 1024px * $scale * $i;
+        margin: 80px * $scale * $i;
+      }
+
+    }
+  }
+}

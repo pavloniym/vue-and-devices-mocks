@@ -1,5 +1,4 @@
-import iphone from './devices/iphone'
+import device from './device'
+import './../assets/scss/styles.scss'
 
-export {
-    iphone
-}
+export default device;

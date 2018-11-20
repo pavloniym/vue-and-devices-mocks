@@ -1,12 +1,33 @@
 {
   "name": "vue-and-devices-mocks",
-  "version": "0.1.0",
-  "private": true,
+  "version": "1.0.0",
+  "description": "Vector devices mockups as vue components",
+  "main": "dist/vue-and-devices-mocks.umd.min.js",
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "serve": "vue-cli-service serve ./demo/main.js",
+    "build": "vue-cli-service build ./demo/main.js",
+    "build:lib": "vue-cli-service build --target lib --name vue-and-devices-mocks ./src/components/index.js",
     "lint": "vue-cli-service lint"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PavelShar/vue-and-devices-mocks.git"
+  },
+  "keywords": [
+    "vue",
+    "vuejs",
+    "mockups",
+    "iphone",
+    "ipad"
+  ],
+  "author": {
+    "name": "Paul Sharypov"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/PavelShar/vue-and-devices-mocks/issues"
+  },
+  "homepage": "https://pavelshar.github.io/vue-and-devices-mocks/",
   "dependencies": {
     "vue": "^2.5.17"
   },

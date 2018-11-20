@@ -1,0 +1,30 @@
+// Import variables
+@import "variables";
+
+// Import main device and skins
+@import "device";
+@import "skins";
+
+
+// Import devices layout
+@import "devices/ipad";
+@import "devices/ipad-mini";
+@import "devices/browser";
+
+
+// Import devices scales
+@import "scales/iphone";
+@import "scales/ipad";
+@import "scales/ipad-mini";
+@import "scales/browser";
+
+
+// Create scales
+@for $i from 1 through 30 {
+  @include iphone($i);
+  @include ipad($i);
+  @include ipad-mini($i);
+  @include browser($i);
+}
+
+

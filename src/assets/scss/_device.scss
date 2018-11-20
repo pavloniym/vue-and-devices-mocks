@@ -1,11 +1,4 @@
-// Variables
-$scale: .05;
-$bg-color: #FFF;
-$fill-color: #FFF;
-$border-color: #333;
-
-$black-bg: #444;
-$black-white: #c2c2c2;
+@import "variables";
 
 .device__container {
   width: 100%;
@@ -103,7 +96,6 @@ $black-white: #c2c2c2;
 
       // The home button square
       &:after {
-        display: none;
         content: "";
         position: absolute;
         top: 50%;
@@ -118,48 +110,4 @@ $black-white: #c2c2c2;
     }
   }
 
-}
-
-// Black skin
-.device--black {
-  &.device {
-    background: $black-bg;
-
-    .device__footer:after {
-      border-color: $black-white;
-    }
-  }
-}
-
-// noShadow skin
-.device--no-shadow {
-  &.device {
-    box-shadow: none;
-  }
-}
-
-// Inverted skin
-.device--inverted {
-
-  $black: $black-bg;
-  $white: $black-white;
-
-  &.device {
-    background: $black;
-    border-color: $white;
-
-    .device__header {
-      background-color: $white;
-      &:after, &:before {
-        background-color: $white;
-      }
-    }
-
-    .device__footer {
-      border-color: $white;
-      &:after {
-        border-color: $white;
-      }
-    }
-  }
 }

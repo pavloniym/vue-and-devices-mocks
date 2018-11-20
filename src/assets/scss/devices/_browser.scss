@@ -1,0 +1,32 @@
+.device--browser {
+
+  .device__header,
+  .device__header:after,
+  .device__header:before {
+    top: 0px;
+    transform: translate(0px, 0px) scale(1);
+    margin-left: 0px;
+    background: transparent;
+    border: 1px solid $border-color;
+  }
+
+  .device__header:before {
+    top: -1px;
+  }
+
+  .device__header:after {
+    top: -1px;
+  }
+
+  .device__content {
+    border-right-width: 0px;
+    border-left-width: 0px;
+    border-bottom-width: 0px;
+    border-radius: 0px;
+  }
+
+  .device__footer {
+    transform: scale(0);
+  }
+
+}

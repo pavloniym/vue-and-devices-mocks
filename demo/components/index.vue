@@ -3,19 +3,22 @@
         <div class="hero-body container">
             <div class="columns">
                 <div class="column has-text-centered">
-                    <component
-                            :is="types.active"
-                            v-bind="props"
-                            :skins="activeSkins"/>
+                    <device v-bind="props" :skins="activeSkins"/>
                 </div>
                 <div class="column">
+
+                    <h1 class="title">Vue and Devices Mocks</h1>
+                    <div class="tags">
+                        <a class="tag" href="https://github.com/PavelShar/vue-and-devices-mocks">github</a>
+                        <a class="tag" href="https://github.com/PavelShar/vue-and-devices-mocks#vue-and-devices-mocks">docs</a>
+                    </div>
 
                     <div class="field">
                         <label class="label">Device</label>
                         <div class="control">
                             <div class="select is-fullwidth">
-                                <select v-model="types.active">
-                                    <option v-for="(i,k) in types.all" :key="k" :selected="k === types.active">
+                                <select v-model="props.type">
+                                    <option v-for="(i,k) in types" :key="k" :selected="k === props.type">
                                         {{i}}
                                     </option>
                                 </select>
@@ -78,28 +81,24 @@
 
 <script>
 
-    import {iphone} from './components'
+    import device from '../../src/components/index'
 
     export default {
-        components: {
-            iphone
-        },
-
+        components: {device},
         data() {
             return {
-                types: {
-                    all: ['iphone'],
-                    active: 'iphone'
-                },
+                types: ['iphone', 'ipad', 'ipad-mini', 'browser'],
                 skins: {
-                    all: ['black', 'inverted', 'noShadow'],
+                    all: ['black', 'inverted', 'noShadow', 'touch'],
                     active: {
                         black: false,
                         inverted: false,
                         noShadow: false,
+                        touch: false,
                     }
                 },
                 props: {
+                    type: 'iphone',
                     scale: 10,
                     width: null,
                     height: null,
